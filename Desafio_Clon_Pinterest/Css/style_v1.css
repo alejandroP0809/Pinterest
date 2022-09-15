@@ -1,0 +1,194 @@
+
+/*  principal style  and create varible*/
+html, body{
+    margin:0;
+    padding:0;
+}
+:root{
+    --gris-color-input:#efefef;
+}
+
+
+/* style header,  nav*/
+
+header{
+    width: 100vw;
+}
+
+li{
+    list-style: none;
+}
+.header-nav-pinterest{
+    margin-right:0;
+    padding: 0;
+
+}
+
+.nav-content-pinterest{
+    width:100vw;
+    box-sizing: border-box;
+    
+}
+
+.nav-list-pinterest{
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    box-sizing: border-box;
+}
+.icon-pinterest{
+    content: url('/Img/icons8-pinterest.svg');
+}
+
+
+/* seach */
+
+
+.seach-pinterest{
+    width: 70em;
+    height: 3em;
+    display: flex;
+    align-items:center;
+    
+    border-radius: 3em;;
+    padding-left:0.5em;
+    box-sizing: border-box;
+    background-color: var(--gris-color-input);
+    
+}
+
+.seach-pinterest::before{
+    content:url('/Img/icons8-search.svg');
+}
+
+.seach{
+    padding: 0.1em;
+    /*flex-grow toma todo */
+    flex-grow: 1;
+    border:transparent;
+    /*quitar el border del input */
+    outline: none;
+    font-size: 1em;
+    background-color: var(--gris-color-input);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/*  home */
+.content-home-pinterest{
+    /*padding: 0.7em 1.5em;*/
+    width: 5em;
+    height: 3em;
+    border: 2px solid black;
+    border-radius: 3em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.strong-home{
+    color:white;
+    font-size: 1.2em;
+}
+
+
+.home-pinterest{
+    cursor: pointer;
+}
+
+/*create*/
+.create-pinterest{
+    display: none;
+}
+
+.content-create-pinterest{
+    /*padding:0.5em 1em;*/
+    cursor: pointer;
+    width: 7em;
+    height: 3em;
+    border-radius: 3em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.strong-create{
+    font-size: 1.2em;
+}
+.strong-create::after{
+    margin-top: 0.1em;
+    content: url('/Img/icons8-flecha-ampliar-24.png');
+}
+/* profile*/
+.icon-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    width:2.5em;
+    height: 2.5em;
+    border-radius: 4em;
+
+}
+.content-icon-Profile{
+    padding-top: 0.3em;
+    cursor: pointer;
+}
+
+/* style notificacion mesaage , profile, menu-desplegable*/
+.content-icon-notification, .content-icon-messages,  .content-icon-menu{
+    padding-top: 0.6em;
+    cursor: pointer;
+}
+
+
+/* Galery */
+
+
+main{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+    
+    
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 22em);
+    /*grid-gap:1px;*/
+    justify-content:center;
+    box-sizing: border-box;
+    
+}
+
+.item{
+    border-radius: 5px;
+    padding: 5px;
+    /*background: #f2f2f2;*/
+    display:flex;
+}
+.item img{
+    max-width: 100%;
+    border-radius: 10px;
+    display:flex;
+}
+
+.level-1{
+    grid-row-end:span 2 ;
+/*  grid-row -end para ocupar espacios de forma dinamica*/
+}
+.level-2{
+    grid-row-end : span 3;
+
+}
+.level-3{
+    grid-row-end :span 1;
+}
